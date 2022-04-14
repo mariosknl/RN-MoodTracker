@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import { Text } from 'react-native';
-import { HomeIcon } from '../components/Icons';
+import { AnalyticsIcon, HomeIcon, ListIcon } from '../components/Icons';
+import { theme } from '../theme';
 import { Analytics } from './Analytics.screen';
 import { History } from './History.screen';
 import { Home } from './Home.screen';
@@ -12,16 +12,44 @@ export const BottomTabsNavigator: React.FC = () => {
   return (
     <BottomTabs.Navigator
       screenOptions={({ route }) => ({
-        tabBarIcon: ({}) => {
+        tabBarActiveTintColor: theme.colorBlue,
+        tabBarInactiveTintColor: theme.colorGrey,
+        tabBarShowLabel: false,
+        tabBarIcon: ({ size, color }) => {
           if (route.name === 'Home') {
-            return <HomeIcon />;
+            return <HomeIcon color={color} size={size} />;
           }
-          return <Text>{route.name}</Text>;
+          if (route.name === 'History') {
+            return <ListIcon color={color} size={size} />;
+          }
+
+          if (route.name === 'Analytics') {
+            return <AnalyticsIcon color={color} size={size} />;
+          }
+          return null;
         },
       })}>
-      <BottomTabs.Screen name="Home" component={Home} />
-      <BottomTabs.Screen name="History" component={History} />
-      <BottomTabs.Screen name="Analytics" component={Analytics} />
+      <BottomTabs.Screen
+        name="Home"
+        component={Home}
+        options={{
+          title: "Today's Mood",
+        }}
+      />
+      <BottomTabs.Screen
+        name="History"
+        component={History}
+        options={{
+          title: 'Past Moods',
+        }}
+      />
+      <BottomTabs.Screen
+        name="Analytics"
+        component={Analytics}
+        options={{
+          title: 'Fancy Graphs',
+        }}
+      />
     </BottomTabs.Navigator>
   );
 };
