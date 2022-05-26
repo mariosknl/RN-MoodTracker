@@ -24,8 +24,8 @@
     "react-native-svg": "12.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.17.10",
-    "@babel/runtime": "7.17.9",
+    "@babel/core": "7.18.2",
+    "@babel/runtime": "7.18.3",
     "@react-native-community/eslint-config": "2.0.0",
     "@types/jest": "26.0.24",
     "@types/react-native": "0.67.7",
