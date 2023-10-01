@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.19.3",
-    "@react-navigation/bottom-tabs": "6.5.8",
-    "@react-navigation/native": "6.1.7",
+    "@react-navigation/bottom-tabs": "6.5.9",
+    "@react-navigation/native": "6.1.8",
     "date-fns": "2.30.0",
     "react": "18.2.0",
     "react-native": "0.72.4",
