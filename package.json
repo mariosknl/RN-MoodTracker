@@ -21,7 +21,7 @@
     "react-native-screens": "3.29.0",
     "react-native-reanimated": "3.7.2",
     "react-native-splash-screen": "3.3.0",
-    "react-native-svg": "15.0.0"
+    "react-native-svg": "15.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.0",
