@@ -317,7 +317,7 @@
     lru-cache "^5.1.1"
     semver "^6.3.0"
 
-"@babel/helper-compilation-targets@^7.24.7", "@babel/helper-compilation-targets@^7.25.2":
+"@babel/helper-compilation-targets@^7.24.7", "@babel/helper-compilation-targets@^7.24.8", "@babel/helper-compilation-targets@^7.25.2":
   version "7.25.2"
   resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.25.2.tgz#e1d9410a90974a3a5a66e84ff55ef62e3c02d06c"
   integrity sha512-U2U5LsSaZ7TAt3cfaymQ8WHh0pxvdHoEk6HVpaexxixjyEquMh0L0YNJNM6CTGKMXV1iksi0iZkGw4AcFkPaaw==
@@ -399,6 +399,15 @@
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.16.7"
     regexpu-core "^5.0.1"
+
+"@babel/helper-create-regexp-features-plugin@^7.24.7":
+  version "7.25.2"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-regexp-features-plugin/-/helper-create-regexp-features-plugin-7.25.2.tgz#24c75974ed74183797ffd5f134169316cd1808d9"
+  integrity sha512-+wqVGP+DFmqwFD3EH6TMTfUNeqDehV3E/dl+Sd54eaXqm17tEUNbEIn4sVivVowbvUpOtIGxdo3GoXyDH9N/9g==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.24.7"
+    regexpu-core "^5.3.1"
+    semver "^6.3.1"
 
 "@babel/helper-define-polyfill-provider@^0.3.1":
   version "0.3.1"
@@ -1344,7 +1353,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.7"
 
-"@babel/plugin-transform-class-properties@^7.24.1":
+"@babel/plugin-transform-class-properties@^7.0.0-0", "@babel/plugin-transform-class-properties@^7.24.1":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-class-properties/-/plugin-transform-class-properties-7.24.7.tgz#256879467b57b0b68c7ddfc5b76584f398cd6834"
   integrity sha512-vKbfawVYayKcSeSR5YYzzyXvsDFWU2mD8U5TFeXtbCPLFUqe7GyCgvO6XDHzje862ODrOwy6WCPmKeWHbCFJ4w==
@@ -1364,6 +1373,18 @@
     "@babel/helper-plugin-utils" "^7.16.7"
     "@babel/helper-replace-supers" "^7.16.7"
     "@babel/helper-split-export-declaration" "^7.16.7"
+    globals "^11.1.0"
+
+"@babel/plugin-transform-classes@^7.0.0-0":
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-classes/-/plugin-transform-classes-7.25.0.tgz#63122366527d88e0ef61b612554fe3f8c793991e"
+  integrity sha512-xyi6qjr/fYU304fiRwFbekzkqVJZ6A7hOjWZd+89FVcBqPV3S9Wuozz82xdpLspckeaafntbzglaW4pqpzvtSw==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.24.7"
+    "@babel/helper-compilation-targets" "^7.24.8"
+    "@babel/helper-plugin-utils" "^7.24.8"
+    "@babel/helper-replace-supers" "^7.25.0"
+    "@babel/traverse" "^7.25.0"
     globals "^11.1.0"
 
 "@babel/plugin-transform-computed-properties@^7.0.0":
@@ -1650,6 +1671,14 @@
     "@babel/helper-create-regexp-features-plugin" "^7.16.7"
     "@babel/helper-plugin-utils" "^7.16.7"
 
+"@babel/plugin-transform-unicode-regex@^7.0.0-0":
+  version "7.24.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-unicode-regex/-/plugin-transform-unicode-regex-7.24.7.tgz#dfc3d4a51127108099b19817c0963be6a2adf19f"
+  integrity sha512-hlQ96MBZSAXUq7ltkjtu3FJCCSMx/j629ns3hA3pXnBXjanNP0LHi+JpPeA81zaWgVK1VGH95Xuy7u0RyQ8kMg==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.24.7"
+    "@babel/helper-plugin-utils" "^7.24.7"
+
 "@babel/preset-flow@^7.13.13":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/preset-flow/-/preset-flow-7.16.7.tgz#7fd831323ab25eeba6e4b77a589f680e30581cbd"
@@ -1678,6 +1707,11 @@
     make-dir "^2.1.0"
     pirates "^4.0.5"
     source-map-support "^0.5.16"
+
+"@babel/regjsgen@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
+  integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
 "@babel/runtime@7.25.0", "@babel/runtime@^7.8.4":
   version "7.25.0"
@@ -7426,16 +7460,19 @@ react-is@^18.3.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
-react-native-reanimated@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.14.0.tgz#2118265f3a5cad8c142633e36d76d0f0cc8cc9e8"
-  integrity sha512-TAxLtCfRyC/nOLeWoX/8MhdIF+Fi1e1NbLhIgEm5Kv9/gioAwSNaqLUYxjIClU1RaLwSTE8iaiHNVhTU4TS9DA==
+react-native-reanimated@3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.15.0.tgz#8814af7c78bbdf4c92bbd583f2266febf962e66a"
+  integrity sha512-yGxOyYAAu/5CyjonM2SgsM5sviiiK8HiHL9jT1bKfRxMLnNX9cFP8/UXRkbMT7ZXIfOlCvNFR0AqnphpuXIPVA==
   dependencies:
     "@babel/plugin-transform-arrow-functions" "^7.0.0-0"
+    "@babel/plugin-transform-class-properties" "^7.0.0-0"
+    "@babel/plugin-transform-classes" "^7.0.0-0"
     "@babel/plugin-transform-nullish-coalescing-operator" "^7.0.0-0"
     "@babel/plugin-transform-optional-chaining" "^7.0.0-0"
     "@babel/plugin-transform-shorthand-properties" "^7.0.0-0"
     "@babel/plugin-transform-template-literals" "^7.0.0-0"
+    "@babel/plugin-transform-unicode-regex" "^7.0.0-0"
     "@babel/preset-typescript" "^7.16.7"
     convert-source-map "^2.0.0"
     invariant "^2.2.4"
@@ -7633,6 +7670,13 @@ regenerate-unicode-properties@^10.0.1:
   dependencies:
     regenerate "^1.4.2"
 
+regenerate-unicode-properties@^10.1.0:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/regenerate-unicode-properties/-/regenerate-unicode-properties-10.1.1.tgz#6b0e05489d9076b04c436f318d9b067bba459480"
+  integrity sha512-X007RyZLsCJVVrjgEFVpLUTZwyOZk3oiL75ZcuYjlIWd6rNJtOjkBwQc5AsRrpbKVkxN6sklw/k/9m2jJYOf8Q==
+  dependencies:
+    regenerate "^1.4.2"
+
 regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
@@ -7689,6 +7733,18 @@ regexpu-core@^5.0.1:
     unicode-match-property-ecmascript "^2.0.0"
     unicode-match-property-value-ecmascript "^2.0.0"
 
+regexpu-core@^5.3.1:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/regexpu-core/-/regexpu-core-5.3.2.tgz#11a2b06884f3527aec3e93dbbf4a3b958a95546b"
+  integrity sha512-RAM5FlZz+Lhmo7db9L298p2vHP5ZywrVXmVXpmAD9GuL5MPH6t9ROw1iA/wfHkQ76Qe7AaPF0nGuim96/IrQMQ==
+  dependencies:
+    "@babel/regjsgen" "^0.8.0"
+    regenerate "^1.4.2"
+    regenerate-unicode-properties "^10.1.0"
+    regjsparser "^0.9.1"
+    unicode-match-property-ecmascript "^2.0.0"
+    unicode-match-property-value-ecmascript "^2.1.0"
+
 regjsgen@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/regjsgen/-/regjsgen-0.6.0.tgz#83414c5354afd7d6627b16af5f10f41c4e71808d"
@@ -7698,6 +7754,13 @@ regjsparser@^0.8.2:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/regjsparser/-/regjsparser-0.8.4.tgz#8a14285ffcc5de78c5b95d62bbf413b6bc132d5f"
   integrity sha512-J3LABycON/VNEu3abOviqGHuB/LOtOQj8SKmfP9anY5GfAVw/SPjwzSjxGjbZXIxbGfqTHtJw58C2Li/WkStmA==
+  dependencies:
+    jsesc "~0.5.0"
+
+regjsparser@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/regjsparser/-/regjsparser-0.9.1.tgz#272d05aa10c7c1f67095b1ff0addae8442fc5709"
+  integrity sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==
   dependencies:
     jsesc "~0.5.0"
 
@@ -8349,6 +8412,11 @@ unicode-match-property-value-ecmascript@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/unicode-match-property-value-ecmascript/-/unicode-match-property-value-ecmascript-2.0.0.tgz#1a01aa57247c14c568b89775a54938788189a714"
   integrity sha512-7Yhkc0Ye+t4PNYzOGKedDhXbYIBe1XEQYQxOPyhcXNMJ0WCABqqj6ckydd6pWRZTHV4GuCPKdBAUiMc60tsKVw==
+
+unicode-match-property-value-ecmascript@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/unicode-match-property-value-ecmascript/-/unicode-match-property-value-ecmascript-2.1.0.tgz#cb5fffdcd16a05124f5a4b0bf7c3770208acbbe0"
+  integrity sha512-qxkjQt6qjg/mYscYMC0XKRn3Rh0wFPlfxB0xkt9CfyTvpX1Ra0+rAmdX2QyAobptSEvuy4RtpPRui6XkV+8wjA==
 
 unicode-property-aliases-ecmascript@^2.0.0:
   version "2.0.0"
