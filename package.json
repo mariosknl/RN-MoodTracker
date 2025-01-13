@@ -19,7 +19,7 @@
     "react-native": "0.76.5",
     "react-native-safe-area-context": "4.14.1",
     "react-native-screens": "4.3.0",
-    "react-native-reanimated": "3.16.6",
+    "react-native-reanimated": "3.16.7",
     "react-native-splash-screen": "3.3.0",
     "react-native-svg": "15.10.1"
   },
