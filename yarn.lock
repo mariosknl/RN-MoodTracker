@@ -8265,10 +8265,10 @@ react-native-is-edge-to-edge@1.2.1:
   resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.2.1.tgz#64e10851abd9d176cbf2b40562f751622bde3358"
   integrity sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q==
 
-react-native-reanimated@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-4.2.1.tgz#fbdee721bff0946a6e5ae67c8c38c37ca4a0a057"
-  integrity sha512-/NcHnZMyOvsD/wYXug/YqSKw90P9edN0kEPL5lP4PFf1aQ4F1V7MKe/E0tvfkXKIajy3Qocp5EiEnlcrK/+BZg==
+react-native-reanimated@4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-4.2.2.tgz#c7a25bac7c493387e03f53ab22ee2644f32cc528"
+  integrity sha512-o3kKvdD8cVlg12Z4u3jv0MFAt53QV4k7gD9OLwQqU8eZLyd8QvaOjVZIghMZhC2pjP93uUU44PlO5JgF8S4Vxw==
   dependencies:
     react-native-is-edge-to-edge "1.2.1"
     semver "7.7.3"
