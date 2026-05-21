@@ -16,7 +16,7 @@
     "@react-navigation/bottom-tabs": "7.16.1",
     "@react-navigation/native": "7.2.4",
     "react": "19.2.5",
-    "react-native-reanimated": "4.3.0",
+    "react-native-reanimated": "4.3.1",
     "react-native": "0.85.3",
     "react-native-screens": "4.24.0",
     "react-native-safe-area-context": "5.7.0",
