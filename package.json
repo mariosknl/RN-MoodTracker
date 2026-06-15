@@ -15,7 +15,7 @@
     "@react-native-async-storage/async-storage": "3.1.1",
     "@react-navigation/bottom-tabs": "7.18.1",
     "@react-navigation/native": "7.3.2",
-    "react": "19.2.6",
+    "react": "19.2.7",
     "react-native-reanimated": "4.4.1",
     "react-native": "0.85.3",
     "react-native-screens": "4.25.2",
@@ -36,7 +36,7 @@
     "@typescript-eslint/parser": "8.61.0",
     "metro-react-native-babel-preset": "0.77.0",
     "jest": "30.4.2",
-    "react-test-renderer": "19.2.6",
+    "react-test-renderer": "19.2.7",
     "typescript": "6.0.3"
   },
   "resolutions": {
