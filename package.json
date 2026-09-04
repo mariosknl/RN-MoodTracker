@@ -31,11 +31,11 @@
     "@types/jest": "30.0.0",
     "@types/react-test-renderer": "19.1.0",
     "eslint": "10.9.1",
-    "babel-jest": "30.4.1",
+    "babel-jest": "30.5.1",
     "@typescript-eslint/eslint-plugin": "8.67.0",
     "@typescript-eslint/parser": "8.67.0",
     "metro-react-native-babel-preset": "0.77.0",
-    "jest": "30.4.2",
+    "jest": "30.5.1",
     "react-test-renderer": "19.2.8",
     "typescript": "7.0.2"
   },
