@@ -21,7 +21,7 @@
     "react-native-screens": "4.30.0",
     "react-native-safe-area-context": "5.10.1",
     "react-native-splash-screen": "3.3.0",
-    "react-native-svg": "15.15.5"
+    "react-native-svg": "15.16.0"
   },
   "devDependencies": {
     "@babel/core": "8.0.7",
